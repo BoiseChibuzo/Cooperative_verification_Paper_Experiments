@@ -20,12 +20,16 @@ Welcome to the repository for cooperative verification experiments in the contex
 We have implemented a Python-based tool selection algorithm. Its primary purpose is to assist in selecting verification tools that best align with the unique characteristics of PLC programs. To run this algorithm, use the following command:
 
 ```bash
-python3 Tool_Selection2.py ```
-``` Custom Verifier Validator
-The custom verifier validator is a specialized CoVeriTeam program developed internally. Its function combines the three most highly recommended verification tools for conducting PLC program verification.```
+python3 Tool_Selection2.py
+ ```
+```
+ Custom Verifier Validator
+The custom verifier validator is a specialized CoVeriTeam program developed internally. Its function combines the three most highly recommended verification tools for conducting PLC program verification.
+```
 
 ### Running Experiments
 Automating the experimentation process was essential due to the substantial number of PLC programs involved (40). To execute these experiments efficiently, we have provided a bash script, which is detailed below. The PLC programs utilized in these experiments are conveniently located in this repository.
+
 ```
 ./runExperiments.sh
 ```
