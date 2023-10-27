@@ -1,0 +1,30 @@
+// Create verifier, validators, and a third_component from yml files
+verifier = ActorFactory.create(ProgramVerifier, verifier_path, verifier_version);
+validator1 = ActorFactory.create(ProgramValidator, validator1_path, validator1_version);
+validator2 = ActorFactory.create(ProgramValidator, validator2_path, validator2_version);
+
+// Use validator1 if verdict is true or false
+condition1 = ELEMENTOF(verdict, {TRUE, FALSE});
+second_component = ITE(condition1, validator1);
+
+// Use validator2 only if verdict is FALSE
+condition2 = ELEMENTOF(verdict, {FALSE});
+third_component = ITE(condition2, validator2);
+
+// Verifier, second_component, and third_component to be executed in sequence
+validating_verifier = SEQUENCE(verifier, second_component, third_component);
+
+// Print type information about the composition (for illustration)
+print("\nFollowing is the type of the actor validating_verifier:");
+print(validating_verifier);
+
+// Prepare example inputs
+program = ArtifactFactory.create(CProgram, program_path, data_model);
+specification = ArtifactFactory.create(BehaviorSpecification, specification_path);
+inputs = {'program': program, 'spec': specification};
+
+// Execute the new component on the inputs
+res = execute(validating_verifier, inputs);
+print("The following artifacts were produced by the execution:");
+print(res);
+
