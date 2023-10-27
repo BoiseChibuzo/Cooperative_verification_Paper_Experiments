@@ -1,7 +1,7 @@
 # Benchmarks for Cooperative verification of safety and security Properties of PLC programs
 This repo is where we put the artifacts from our experiments described in our paper - Benchmarks for cooperative verification of safety and security properties of PLC programs
 
-Welcome to the repository for cooperative verification experiments in the context of safety and security properties for Programmable Logic Controllers (PLC) programs. This repository houses the necessary artifacts and tools required to conduct these experiments.
+Welcome to the repository for cooperative verification experiments in the context of safety and security properties for Programmable Logic Controllers (PLC) programs. This repository houses the necessary artifacts and tools to reproduce the experiment's results.
 
 ## Table of Contents
 
