@@ -48,6 +48,6 @@ Combinations of tools, as described in the paper, are considered to enhance the 
 Properties
 To adapt Linear Temporal Logic (LTL) formulas to the specific behavior of PLC programs, we introduced the end-of-cycle (EoC) variable in the properties used in these experiments. Further details regarding this adaptation can be found in the associated paper.
 
-For additional information on the experiments, their outcomes, and the specific tools employed, please consult the associated paper.
+For additional information on the experiments, their outcomes, and the specific tools employed, please consult the associated paper. And the PLC programs verified were not added for license issues. If you need further information about the PLC programs or the result files, please contact chibuzoukegbu@u.boisestate.edu.
 
 Thank you for your interest in our cooperative verification experiments for PLC program safety and security. Your contributions and feedback are greatly appreciated.
